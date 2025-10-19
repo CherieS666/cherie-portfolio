@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cherie Sun</title>
+  <link rel="icon" href="static/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Merriweather', serif;
+      background-color: #fdf6f0;
+      color: #333;
+      line-height: 1.6;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-family: 'Sacramento', cursive;
+      font-size: 3.5rem;
+      margin-top: 40px;
+      animation: fadeIn 2s ease-out;
+    }
+
+    h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .top-container {
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      padding: 100px 20px;
+      position: relative;
+    }
+
+    .top-cloud, .bottom-cloud {
+      position: absolute;
+      width: 100px;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .top-cloud {
+      top: 30px;
+      left: 20%;
+    }
+
+    .bottom-cloud {
+      bottom: 60px;
+      right: 20%;
+      animation-delay: 2s;
+    }
+
+    .mountain {
+      width: 300px;
+      margin-top: 50px;
+      animation: fadeIn 3s ease-in;
+    }
+
+    .title-text h2 {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      color: #555;
+    }
+
+    .pro {
+      font-weight: bold;
+      color: #e91e63;
+    }
+
+    .middle-container {
+      padding: 60px 20px;
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    .profile img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      animation: zoomIn 1.2s ease-out;
+    }
+
+    .intro {
+      font-size: 1.1rem;
+      color: #444;
+      margin-top: 10px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 50px auto;
+      width: 60%;
+    }
+
+    .skills {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .skill-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 40px 0;
+      flex-wrap: wrap;
+      animation: slideIn 1.2s ease-out;
+    }
+
+    .skill-row img {
+      width: 120px;
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    .skill-row h3 {
+      font-size: 1.4rem;
+      color: #333;
+    }
+
+    .contact-me {
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .contact-message {
+      margin: 20px 0;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background-color: #e91e63;
+      padding: 12px 25px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #c2185b;
+    }
+
+    .bottom-container {
+      background-color: #f0f0f0;
+      padding: 30px 0;
+      margin-top: 60px;
+    }
+
+    .footer-link {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #e91e63;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .footer-link:hover {
+      color: #c2185b;
+    }
+
+    .copyright {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateX(-100px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="top-container">
+    <img class="top-cloud" src="static/cloud.png" alt="cloud">
+    <div class="title-text">
+      <h1>I'm Cherie.</h1>
+      <h2>a <span class="pro">pro</span>fessional CPA and Senior Analyst.</h2>
+    </div>
+    <img class="bottom-cloud" src="static/cloud.png" alt="cloud">
+    <img class="mountain" src="static/trees.jpg" alt="mountain-img">
+  </div>
+
+  <div class="middle-container">
+    <div class="profile">
+      <img src="static/Cherie.jpg" alt="Cherie Sun smiling in professional portrait">
+      <h2>Hello.</h2>
+      <p class="intro">
+        🧾 Certified Practising Accountant(CPA),member of CPA Australia since 2012<br>
+        💻 I am Analyst, Programmer and 🌐 Web Developer<br>
+        🎶 I ❤️ playing Guzheng and baking my own cakes.
+      </p>
+    </div>
+
+    <hr>
+
+    <div class="skills">
+      <h2>My Skills.</h2>
+
+      <div class="skill-row">
+        <img class="code-img" src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" alt="coding gif">
+        <div>
+          <h3>Design & Development</h3>
+          <p>I'm a CPA and experienced analyst who loves finding the story in the numbers. Whether it’s forecasting trends or improving reporting workflows, I enjoy helping teams make data-driven decisions. When I'm not deep in spreadsheets, you’ll likely find me playing the Guzheng — my favorite way to unwind and stay creative.</p>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <img class="chilli-img" src="static/cakes.jpg" alt="chillies-img">
+        <div>
+          <h3>Baking Cakes</h3>
+          <p>But my best skill is actually in baking cakes. I am the undisputed queen of cakes.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>If you love cakes as much as I do.</h3>
+      <p class="contact-message">Love cakes as much as I do? Let's talk about how awesome they are! We can code while we eat cakes!</p>
+      <a class="btn" href="mailto:cherysunshine@hotmail.com">CONTACT ME</a>
+    </div>
+  </div>
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/cherielynnsun">LinkedIn</a>
+    <p class="copyright">© 2024 Cherie Sun @ The App Guzheng.</p>
+  </div>
+
+</body>
+</html>
